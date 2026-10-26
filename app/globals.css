@@ -127,3 +127,60 @@
     @apply bg-background text-foreground;
   }
 }
+/* ===== ACaa BIRTHDAY THEME 🌸 ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+::selection {
+  background: #f9a8d4;
+  color: #831843;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff1f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f9a8d4;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ec8fbd;
+}
+
+@keyframes aca-soft-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes aca-soft-glow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(249, 168, 212, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(249, 168, 212, 0.5);
+  }
+}
+
+.aca-floating {
+  animation: aca-soft-float 3s ease-in-out infinite;
+}
+
+.aca-glowing {
+  animation: aca-soft-glow 2.5s ease-in-out infinite;
+}
